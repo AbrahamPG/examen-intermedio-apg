@@ -1,6 +1,49 @@
 {% extends "base_generic.html" %}
 
 {% block content %}
+    <table class="TABLE">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col"> Nombre de mesero</th>
+            <th scope="col"> Pais de origen</th>
+            <th scope="col"> Edad</th>
+            <th scope="col"> DNI</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>  {{ data.nombre }}</td>
+            <td>  {{ data.pais }}</td>
+            <td>  {{ data.edad }}</td>
+            <td>  {{ data.dni }}</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>26</td>
+            <td>78964548</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>Holanda</td>
+            <td>35</td>
+            <td>63048579</td>
+        </tr>
+        <tr>
+            <th scope="row">4</th>
+            <td>Harry</td>
+            <td>España</td>
+            <td>22</td>
+            <td>74052058</td>
+        </tr>
+        </tbody>
+    </table>
+    <br><br>
+
     <p>La URL hija esta funcionando!!!</p>
         <h1>Nombre de mesero: {{ data.nombre }}</h1>
         <h1>Pais de mesero: {{ data.pais }}</h1>
